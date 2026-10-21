@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UTB.Casino.Domain.Entities;
-using UTB.Casino.Domain.Entities.Interfaces;
+using UTB.Casino.Infrastructure.Database.Seeding;
 
 
 namespace UTB.Casino.Infrastructure.Database;
@@ -13,6 +13,17 @@ public class CasinoDbContext : DbContext
     
     public CasinoDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
     {
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        
+        CustomerInit customerInit = new CustomerInit();
+        GameInit gameInit = new GameInit();
+        
+        modelBuilder.Entity<Customer>().HasData(customerInit.GetCustomers2());
+        modelBuilder.Entity<Game>().HasData(gameInit.GetGames2());
     }
 }
 

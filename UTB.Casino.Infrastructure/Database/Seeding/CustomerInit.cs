@@ -3,7 +3,7 @@ namespace UTB.Casino.Infrastructure.Database.Seeding;
 
 internal class CustomerInit
 {
-    public IList<Domain.Entities.Customer> GetCustomers()
+    public IList<Domain.Entities.Customer> GetCustomers2()
     {
         IList<Domain.Entities.Customer> customers = new List<Domain.Entities.Customer>();
 
