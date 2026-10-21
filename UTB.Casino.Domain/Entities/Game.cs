@@ -10,5 +10,10 @@ public class Game : Entity <int>
     [Required]
     public string Description { get; set; }
     [Required]
-    public DateTime Cost { get; set; }
+    public double Cost { get; set; }
+    [Required]
+    public string Picture { get; set; }
+    
+    [Required]
+    public string AltPicture { get; set; }
 }
