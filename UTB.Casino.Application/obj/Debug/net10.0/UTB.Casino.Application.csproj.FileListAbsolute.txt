@@ -1,0 +1,12 @@
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/bin/Debug/net10.0/UTB.Casino.Application.deps.json
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/bin/Debug/net10.0/UTB.Casino.Application.dll
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/bin/Debug/net10.0/UTB.Casino.Application.pdb
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.AssemblyInfoInputs.cache
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.AssemblyInfo.cs
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.csproj.CoreCompileInputs.cache
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.sourcelink.json
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.dll
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/refint/UTB.Casino.Application.dll
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.pdb
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/ref/UTB.Casino.Application.dll

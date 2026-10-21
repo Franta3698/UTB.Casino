@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTB.Casino.Web", "UTB.Casino.Web\UTB.Casino.Web.csproj", "{07304BC8-2846-44BE-85B0-261D0A242C92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTB.Casino.Infrastructure", "UTB.Casino.Infrastructure\UTB.Casino.Infrastructure.csproj", "{06E76AC4-E93C-4401-9402-3D9644F58E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTB.Casino.Domain", "UTB.Casino.Domain\UTB.Casino.Domain.csproj", "{BF9D7B5A-4EF2-4C3E-8311-DB61A7E9CDB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTB.Casino.Application", "UTB.Casino.Application\UTB.Casino.Application.csproj", "{48014152-6856-4020-91D2-83393C63AF28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07304BC8-2846-44BE-85B0-261D0A242C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07304BC8-2846-44BE-85B0-261D0A242C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07304BC8-2846-44BE-85B0-261D0A242C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07304BC8-2846-44BE-85B0-261D0A242C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E76AC4-E93C-4401-9402-3D9644F58E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E76AC4-E93C-4401-9402-3D9644F58E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E76AC4-E93C-4401-9402-3D9644F58E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E76AC4-E93C-4401-9402-3D9644F58E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9D7B5A-4EF2-4C3E-8311-DB61A7E9CDB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9D7B5A-4EF2-4C3E-8311-DB61A7E9CDB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9D7B5A-4EF2-4C3E-8311-DB61A7E9CDB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9D7B5A-4EF2-4C3E-8311-DB61A7E9CDB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48014152-6856-4020-91D2-83393C63AF28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48014152-6856-4020-91D2-83393C63AF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48014152-6856-4020-91D2-83393C63AF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48014152-6856-4020-91D2-83393C63AF28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
