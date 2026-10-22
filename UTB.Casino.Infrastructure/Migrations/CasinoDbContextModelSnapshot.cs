@@ -55,6 +55,28 @@ namespace UTB.Casino.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customer");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BankAccountId = 1,
+                            Email = "sugoma@seznam.cz",
+                            FirstName = "Sugoma",
+                            LastName = "Nuts",
+                            PhoneNumber = "+35988888888",
+                            UserName = "bigdickRandy67"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            BankAccountId = 4,
+                            Email = "number12COCK@seznam.cz",
+                            FirstName = "BUSSSS",
+                            LastName = "Raketak",
+                            PhoneNumber = "+9807969795",
+                            UserName = "ballz"
+                        });
                 });
 
             modelBuilder.Entity("UTB.Casino.Domain.Entities.Game", b =>
@@ -87,6 +109,26 @@ namespace UTB.Casino.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Game");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AltPicture = "FreeSpinMashine",
+                            Cost = 50.0,
+                            Description = "You can spin the cool wheel and save up for your Mortgage",
+                            Name = "FreeSpin",
+                            Picture = "/fotecka"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AltPicture = "Wheel",
+                            Cost = 100.0,
+                            Description = "You can win",
+                            Name = "Roulette",
+                            Picture = "/fotecka"
+                        });
                 });
 
             modelBuilder.Entity("UTB.Casino.Domain.Entities.GameSession", b =>

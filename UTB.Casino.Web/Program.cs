@@ -32,6 +32,12 @@ app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider
+        .GetRequiredService<CasinoDbContext>();
 
+    dbContext.Database.Migrate();
+}
 app.Run();
     
