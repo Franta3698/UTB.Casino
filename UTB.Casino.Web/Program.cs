@@ -34,6 +34,7 @@ app.MapControllerRoute(
     .WithStaticAssets();
 using (var scope = app.Services.CreateScope())
 {
+    
     var dbContext = scope.ServiceProvider
         .GetRequiredService<CasinoDbContext>();
 
