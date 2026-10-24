@@ -479,6 +479,9 @@
         }
       },
       "UTB.Casino.Application/1.0.0": {
+        "dependencies": {
+          "UTB.Casino.Domain": "1.0.0"
+        },
         "runtime": {
           "UTB.Casino.Application.dll": {
             "assemblyVersion": "1.0.0.0",

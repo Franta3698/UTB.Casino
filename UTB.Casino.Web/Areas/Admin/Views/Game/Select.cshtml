@@ -1,0 +1,22 @@
+@using UTB.Casino.Domain.Entities
+@model IList<Game>
+
+<h1>Seznam her</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Název</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var game in Model)
+    {
+        <tr>
+            <td>@game.Id</td>
+            <td>@game.Name</td>
+        </tr>
+    }
+    </tbody>
+</table>

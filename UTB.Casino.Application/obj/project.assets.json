@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "UTB.Casino.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/UTB.Casino.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UTB.Casino.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "UTB.Casino.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UTB.Casino.Domain/UTB.Casino.Domain.csproj",
+      "msbuildProject": "../UTB.Casino.Domain/UTB.Casino.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "UTB.Casino.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/frantisek/.nuget/packages/": {}
@@ -32,7 +51,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Domain/UTB.Casino.Domain.csproj": {
+              "projectPath": "/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Domain/UTB.Casino.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

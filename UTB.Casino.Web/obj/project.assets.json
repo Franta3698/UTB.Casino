@@ -637,6 +637,9 @@
       "UTB.Casino.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "UTB.Casino.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/UTB.Casino.Application.dll": {}
         },

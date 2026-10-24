@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\UTB.Casino.Domain\UTB.Casino.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

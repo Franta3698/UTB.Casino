@@ -10,3 +10,7 @@
 /home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/refint/UTB.Casino.Application.dll
 /home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.pdb
 /home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/ref/UTB.Casino.Application.dll
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/bin/Debug/net10.0/UTB.Casino.Domain.dll
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/bin/Debug/net10.0/UTB.Casino.Domain.pdb
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casino.Application.csproj.AssemblyReference.cache
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Application/obj/Debug/net10.0/UTB.Casi.901B74DF.Up2Date
