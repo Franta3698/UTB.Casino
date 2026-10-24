@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using UTB.Casino.Domain.Entities.Interfaces.Repository;
 using UTB.Casino.Infrastructure.Database;
 using UTB.Casino.Infrastructure.Repository;
+using UTB.Eshop.Application.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,10 @@ builder.Services.AddDbContext<CasinoDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IGameRepository, GameRepository>();
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IGameAppService, GameAppService>();
+builder.Services.AddScoped<IAccountAppService, AccountAppService>();
+builder.Services.AddScoped<IHomeService, HomeService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

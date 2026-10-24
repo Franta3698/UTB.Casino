@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "L3Z2Ldg1zv8=",
+  "dgSpecHash": "kXPv82Y6/kQ=",
   "success": true,
   "projectFilePath": "/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Web/UTB.Casino.Web.csproj",
   "expectedPackageFiles": [
     "/home/frantisek/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/frantisek/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/10.0.13/microsoft.aspnetcore.identity.entityframeworkcore.10.0.13.nupkg.sha512",
     "/home/frantisek/.nuget/packages/microsoft.build.framework/18.0.2/microsoft.build.framework.18.0.2.nupkg.sha512",
     "/home/frantisek/.nuget/packages/microsoft.codeanalysis.analyzers/3.11.0/microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",
     "/home/frantisek/.nuget/packages/microsoft.codeanalysis.common/5.0.0/microsoft.codeanalysis.common.5.0.0.nupkg.sha512",
