@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
+using UTB.Casino.Domain.Entities.Interfaces.Repository;
 using UTB.Casino.Infrastructure.Database;
+using UTB.Casino.Infrastructure.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CasinoDbContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IGameRepository, GameRepository>();
 
 var app = builder.Build();
 
