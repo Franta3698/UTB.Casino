@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using UTB.Casino.Domain.Entities;
 using UTB.Casino.Infrastructure.Database.Seeding;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using UTB.Casino.Infrastructure.Identity;
 
 namespace UTB.Casino.Infrastructure.Database;
 
-public class CasinoDbContext : DbContext
+public class CasinoDbContext : IdentityDbContext <User, Role, int>
 {
     public DbSet<Game> Games { get; set; }
     public DbSet<GameSession>  GameSessions { get; set; }

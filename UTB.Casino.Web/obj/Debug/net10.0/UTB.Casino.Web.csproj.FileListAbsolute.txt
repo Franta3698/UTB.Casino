@@ -194,3 +194,5 @@
 /home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Web/bin/Debug/net10.0/UTB.Casino.Infrastructure.pdb
 /home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Web/obj/Debug/net10.0/UTB.Casino.Web.csproj.AssemblyReference.cache
 /home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Web/obj/Debug/net10.0/compressed/fs2mn7y8cu-{0}-y0dbjjrie9-y0dbjjrie9.gz
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Web/bin/Debug/net10.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/frantisek/RiderProjects/UTB.Casino/UTB.Casino.Web/obj/Debug/net10.0/compressed/028yxhgt4q-{0}-795nmtwfcf-795nmtwfcf.gz

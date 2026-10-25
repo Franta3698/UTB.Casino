@@ -5,7 +5,8 @@ using UTB.Casino.Domain.Entities.Interfaces.Repository;
 using UTB.Casino.Infrastructure.Database;
 using UTB.Casino.Infrastructure.Repository;
 using UTB.Eshop.Application.Implementation;
-
+using Microsoft.AspNetCore.Identity;
+using UTB.Casino.Infrastructure.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
