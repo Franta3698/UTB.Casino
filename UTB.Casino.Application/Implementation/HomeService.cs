@@ -15,8 +15,5 @@ public class HomeService : IHomeService
     public IndexViewModel GetIndexViewModel()
     {
         IndexViewModel viewModel = new IndexViewModel();
-        // Na hlavní stránce zobrazíme seznam našich 3 her
-        viewModel.Games = _gameAppService.SelectAll(); 
-        return viewModel;
     }
 }
