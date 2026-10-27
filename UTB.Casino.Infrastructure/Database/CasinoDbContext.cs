@@ -9,8 +9,11 @@ namespace UTB.Casino.Infrastructure.Database;
 public class CasinoDbContext : IdentityDbContext <User, Role, int>
 {
     public DbSet<Game> Games { get; set; }
-    public DbSet<GameSession>  GameSessions { get; set; }
-    public DbSet<Customer>  Customers { get; set; }
+    public DbSet<GameSession> GameSessions { get; set; }
+    public DbSet<Customer> Customers { get; set; }
+    public DbSet<Account> Accounts { get; set; }
+    public DbSet<Transaction> Transactions { get; set; }
+    public DbSet<Bonus> Bonuses { get; set; }
     
     public CasinoDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
     {

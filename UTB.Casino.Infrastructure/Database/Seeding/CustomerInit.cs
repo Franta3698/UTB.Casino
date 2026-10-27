@@ -11,7 +11,7 @@ internal class CustomerInit
         {
             Id = 1,
             UserName = "bigdickRandy67",
-            BankAccountId = 1,
+            AccountId = 1,
             Email = "sugoma@seznam.cz",
             FirstName = "Sugoma",
             LastName = "Nuts",
@@ -21,7 +21,7 @@ internal class CustomerInit
         {
             Id = 2,
             UserName = "ballz",
-            BankAccountId = 4,
+            AccountId = 4,
             Email = "number12COCK@seznam.cz",
             FirstName = "BUSSSS",
             LastName = "Raketak",
