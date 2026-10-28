@@ -44,7 +44,6 @@ builder.Services.AddScoped<IGameAppService, GameAppService>();
 builder.Services.AddScoped<IAccountAppService, AccountAppService>();
 builder.Services.AddScoped<ICustomerAppService, CustomerAppService>();
 builder.Services.AddScoped<IGameSessionAppService, GameSessionAppService>();
-builder.Services.AddScoped<IHomeService, HomeService>();
 
 var app = builder.Build();
 

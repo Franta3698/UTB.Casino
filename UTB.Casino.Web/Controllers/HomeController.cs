@@ -9,18 +9,7 @@ namespace UTB.Casino.Web.Controllers;
 
 public class HomeController : Controller
 {
-    IHomeService _homeService;
     
-    public HomeController(IHomeService homeService)
-    {
-        _homeService = homeService;
-    }
-    
-    public IActionResult Index()
-    {
-        IndexViewModel viewModel = new IndexViewModel();
-        return View(viewModel);
-    }
 
     public IActionResult Privacy()
     {

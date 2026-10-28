@@ -1,9 +1,11 @@
-using UTB.Casino.Application.ViewModels;
+using UTB.Casino.Domain.Entities;
 
 namespace UTB.Casino.Application.Abstraction;
 
 public interface IGameAppService
 {
-    IEnumerable<GameViewModel> SelectAll();
-    GameViewModel? GetById(int id);
+    IList<Game> SelectAll();
+    Game? GetById(int id);
+    void Create(Game game);
+    bool Delete(int id);
 }

@@ -1,5 +1,5 @@
 using UTB.Casino.Application.Abstraction;
-using UTB.Casino.Application.ViewModels;
+using UTB.Casino.Domain.Entities;
 using UTB.Casino.Domain.Entities.Interfaces.Repository;
 
 namespace UTB.Casino.Application.Implementation;
@@ -13,34 +13,30 @@ public class GameAppService : IGameAppService
         _gameRepository = gameRepository;
     }
 
-    public IEnumerable<GameViewModel> SelectAll()
+    public IList<Game> SelectAll()
     {
-        var games = _gameRepository.GetAll();
-
-        return games.Select(g => new GameViewModel
-        {
-            Id = g.Id,
-            Name = g.Name,
-            Description = g.Description,
-            Cost = g.Cost,           // Opraveno z MinBet na Cost
-            Picture = g.Picture,     // Přidáno
-            AltPicture = g.AltPicture // Přidáno
-        }).ToList();
+        return _gameRepository.GetAll().ToList();
     }
 
-    public GameViewModel? GetById(int id)
+    public Game? GetById(int id)
+    {
+        return _gameRepository.GetById(id);
+    }
+
+    public void Create(Game game)
+    {
+        _gameRepository.Add(game);
+    }
+
+    public bool Delete(int id)
     {
         var game = _gameRepository.GetById(id);
-        if (game == null) return null;
 
-        return new GameViewModel
+        if (game is not null)
         {
-            Id = game.Id,
-            Name = game.Name,
-            Description = game.Description,
-            Cost = game.Cost,
-            Picture = game.Picture,
-            AltPicture = game.AltPicture
-        };
+            _gameRepository.Delete(game);
+            return true;
+        }
+        return false;
     }
 }
