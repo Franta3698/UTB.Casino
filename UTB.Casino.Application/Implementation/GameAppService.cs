@@ -39,4 +39,8 @@ public class GameAppService : IGameAppService
         }
         return false;
     }
+    public void Edit(Game game)
+    {
+        _gameRepository.Edit(game);
+    }
 }

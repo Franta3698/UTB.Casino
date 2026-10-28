@@ -8,4 +8,6 @@ public interface IGameAppService
     Game? GetById(int id);
     void Create(Game game);
     bool Delete(int id);
+    void Edit(Game game);
+    
 }
