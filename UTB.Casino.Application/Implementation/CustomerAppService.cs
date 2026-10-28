@@ -24,7 +24,7 @@ public class CustomerAppService : ICustomerAppService
 
     public void CreateCustomer(Customer customer)
     {
-        // Příklad logiky: při vytvoření zákazníka mu můžeme rovnou založit i účet, pokud ho nemá
+        
         if (customer.Account == null)
         {
             var newAccount = new Account

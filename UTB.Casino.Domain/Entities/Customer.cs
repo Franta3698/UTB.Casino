@@ -10,7 +10,7 @@ public class Customer : Entity<int>
     public string UserName { get; set; }
 
     [Required]
-    [EmailAddress] // Doporučeno: automaticky ověří, zda má e-mail správný formát
+    [EmailAddress]
     public string Email { get; set; }
 
     public string? PhoneNumber { get; set; }
@@ -21,8 +21,8 @@ public class Customer : Entity<int>
     [Required]
     public string LastName { get; set; }
 
-    // --- Vztah k účtu (Account) ---
+
     [ForeignKey(nameof(Account))]
     public int AccountId { get; set; }
-    public Account Account { get; set; } // <--- Přidáno: Navigační vlastnost
+    public Account Account { get; set; }
 }

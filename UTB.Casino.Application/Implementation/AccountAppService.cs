@@ -9,7 +9,7 @@ public class AccountAppService : IAccountAppService
 {
     private readonly IAccountRepository _accountRepository;
     private readonly IRepository<Transaction, int> _transactionRepository;
-    private readonly AccountValidator _validator; // Přidáme validátor
+    private readonly AccountValidator _validator;
 
     public AccountAppService(
         IAccountRepository accountRepository, 
@@ -17,16 +17,16 @@ public class AccountAppService : IAccountAppService
     {
         _accountRepository = accountRepository;
         _transactionRepository = transactionRepository;
-        _validator = new AccountValidator(); // Můžete registrovat i přes DI, nebo vytvořit instanci
+        _validator = new AccountValidator();
     }
 
     public bool Deposit(int accountId, double amount)
     {
-        // 1. Zavoláme validaci ze samostatné složky
+
         var (isValid, errorMessage) = _validator.ValidateDeposit(amount);
         if (!isValid)
         {
-            // Zde byste mohli chybovou hlášku zalogovat nebo vyhodit výjimku
+
             return false; 
         }
 
@@ -52,14 +52,13 @@ public class AccountAppService : IAccountAppService
     {
         var account = _accountRepository.GetById(accountId);
 
-        // 1. Zavoláme validaci, která zkontroluje i zůstatek na účtu
         var (isValid, errorMessage) = _validator.ValidateWithdrawal(account, amount);
         if (!isValid)
         {
             return false;
         }
 
-        account!.Balance -= amount; // account už víme, že není null díky validátoru
+        account!.Balance -= amount;
         _accountRepository.Edit(account);
 
         var transaction = new Transaction

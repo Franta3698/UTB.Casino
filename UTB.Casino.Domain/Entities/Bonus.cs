@@ -8,18 +8,18 @@ public class Bonus : Entity<int>
 {
     [Required]
     [StringLength(100)]
-    public string Title { get; set; } // Název bonusu (např. "Uvítací bonus 100%")
+    public string Title { get; set; } 
 
     [Required]
-    public double Amount { get; set; } // Finanční hodnota bonusu
+    public double Amount { get; set; } 
 
     [Required]
-    public DateTime ValidUntil { get; set; } // Do kdy platí
+    public DateTime ValidUntil { get; set; } 
 
     [Required]
-    public bool IsUsed { get; set; } // Zda už byl bonus uplatněn (true/false)
+    public bool IsUsed { get; set; } 
 
-    // --- Vztah k účtu ---
+    
     [ForeignKey(nameof(Account))]
     public int AccountId { get; set; }
     public Account Account { get; set; }

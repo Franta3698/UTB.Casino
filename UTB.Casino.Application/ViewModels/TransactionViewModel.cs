@@ -15,7 +15,7 @@ public class TransactionViewModel
 
     [Required]
     [StringLength(50)]
-    public string Type { get; set; } // Např. "Deposit" / "Withdrawal"
+    public string Type { get; set; }
 
     [Required]
     public int AccountId { get; set; }

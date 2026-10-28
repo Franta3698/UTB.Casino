@@ -7,7 +7,7 @@ public class CustomerValidator
         var today = DateTime.Today;
         var age = today.Year - birthDate.Year;
         
-        // Zohlednění, zda už měl letos narozeniny
+
         if (birthDate.Date > today.AddYears(-age)) 
         {
             age--;

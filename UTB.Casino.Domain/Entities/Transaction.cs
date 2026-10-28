@@ -5,16 +5,15 @@ namespace UTB.Casino.Domain.Entities;
 public class Transaction : Entity<int>
 {
     [Required]
-    public double Amount { get; set; } // Částka transakce
+    public double Amount { get; set; }
 
     [Required]
-    public DateTime Date { get; set; } // Datum a čas transakce
+    public DateTime Date { get; set; }
 
     [Required]
     [StringLength(50)]
-    public string Type { get; set; } // Např. "Deposit" (Vklad), "Withdrawal" (Výběr)
+    public string Type { get; set; } 
 
-    // --- Vztah k účtu ---
     [ForeignKey(nameof(Account))]
     public int AccountId { get; set; }
     public Account Account { get; set; }

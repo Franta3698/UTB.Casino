@@ -8,7 +8,7 @@ namespace UTB.Casino.Web.Controllers;
 
 public class GameController : Controller
 {
-    private readonly CasinoDbContext _context; // Zde doplňte název vašeho DbContextu
+    private readonly CasinoDbContext _context;
 
     public GameController(CasinoDbContext context)
     {
@@ -32,14 +32,13 @@ public class GameController : Controller
             return NotFound();
         }
 
-        // Naplníme ViewModel pouze daty pro cenu a ID
+
         var viewModel = new GameEditViewModel
         {
             Id = game.Id,
             Cost = game.Cost
         };
 
-        // Do View můžeme poslat i název hry, abychom ho v hlavičce formuláře zobrazili
         ViewBag.GameName = game.Name;
 
         return View(viewModel);

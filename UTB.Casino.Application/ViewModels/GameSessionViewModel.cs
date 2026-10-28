@@ -13,10 +13,10 @@ public class GameSessionViewModel
     public DateTime EndTime { get; set; }
 
     [Required]
-    public int GameId { get; set; } // Pro výběr hry ve formuláři
+    public int GameId { get; set; }
 
     [Required]
-    public int AccountId { get; set; } // Pro výběr účtu ve formuláři
+    public int AccountId { get; set; }
 
     [Required]
     public double Exchange { get; set; }

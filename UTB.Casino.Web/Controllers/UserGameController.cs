@@ -14,7 +14,7 @@ public class UserGameController : Controller
         _gameAppService = gameAppService;
     }
 
-    // Zobrazení formuláře pro změnu ceny
+
     [HttpGet]
     public IActionResult EditCost(int id)
     {
@@ -34,7 +34,7 @@ public class UserGameController : Controller
         return View(model);
     }
 
-    // Uložení nové ceny
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult EditCost(GameEditViewModel model)

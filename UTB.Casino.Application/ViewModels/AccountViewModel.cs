@@ -12,5 +12,5 @@ public class AccountViewModel
 
     [Required]
     [StringLength(10)]
-    public string Currency { get; set; } = "CZK"; // Výchozí měna
+    public string Currency { get; set; } = "CZK";
 }

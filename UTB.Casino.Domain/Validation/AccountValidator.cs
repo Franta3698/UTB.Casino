@@ -4,7 +4,7 @@ namespace UTB.Casino.Application.Validators;
 
 public class AccountValidator
 {
-    // Validace pro vklad
+
     public (bool IsValid, string ErrorMessage) ValidateDeposit(double amount)
     {
         if (amount <= 0)
@@ -18,7 +18,7 @@ public class AccountValidator
         return (true, string.Empty);
     }
 
-    // Validace pro výběr
+
     public (bool IsValid, string ErrorMessage) ValidateWithdrawal(Account? account, double amount)
     {
         if (account == null)
