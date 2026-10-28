@@ -32,12 +32,14 @@ builder.Services.AddIdentity<User, Role>(options =>
 .AddDefaultTokenProviders();
 
 // 3. Repositories (všechny entity)
+builder.Services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
 builder.Services.AddScoped<IGameRepository, GameRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IRepository<Customer, int>, CustomerRepository>();
 builder.Services.AddScoped<IRepository<GameSession, int>, Repository<GameSession, int>>();
 builder.Services.AddScoped<IRepository<Transaction, int>, Repository<Transaction, int>>();
 builder.Services.AddScoped<IRepository<Bonus, int>, Repository<Bonus, int>>();
+
 
 // 4. Application Services
 builder.Services.AddScoped<IGameAppService, GameAppService>();
@@ -57,19 +59,16 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+app.UseStaticFiles();
+app.UseRouting();
+
 // 5. Authentication & Authorization (musí být v tomto pořadí před UseAuthorization!)
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapStaticAssets();
-
-app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Game}/{action=Select}/{id?}");
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

@@ -15,10 +15,10 @@ public class CasinoDbContext : IdentityDbContext <User, Role, int>
     public DbSet<Transaction> Transactions { get; set; }
     public DbSet<Bonus> Bonuses { get; set; }
     
-    public CasinoDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+   
+    public CasinoDbContext(DbContextOptions<CasinoDbContext> options) : base(options)
     {
     }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

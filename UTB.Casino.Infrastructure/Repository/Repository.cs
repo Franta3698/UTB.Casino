@@ -2,14 +2,15 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using UTB.Casino.Domain.Entities.Interfaces;
 using UTB.Casino.Domain.Entities.Interfaces.Repository;
+using UTB.Casino.Infrastructure.Database;
 
 namespace UTB.Casino.Infrastructure.Repository
 {
     public class Repository<T, TKey> : IRepository<T, TKey> where T : class, IEntity<TKey> where TKey : notnull
     {
         private readonly DbSet<T> dbSet;
-        private readonly DbContext dbContext;
-        public Repository(DbContext dbContext)
+        private readonly CasinoDbContext dbContext;
+        public Repository(CasinoDbContext dbContext)
         {
             this.dbSet = dbContext.Set<T>();
             this.dbContext = dbContext;
