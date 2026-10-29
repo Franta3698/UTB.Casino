@@ -15,5 +15,5 @@ public class Account : Entity<int>
     
     public ICollection<GameSession> GameSessions { get; set; } = new List<GameSession>();
 
-    public ICollection<Customer> Customers { get; set; } = new List<Customer>();
+    public ICollection<Transaction> Customers { get; set; } = new List<Transaction>();
 }

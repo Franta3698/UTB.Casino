@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UTB.Casino.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1c310bf87906f65a27efe10dc7cb943961bd401")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9d371f016822da12c1a8a854828dfe30029b96b")]
 [assembly: System.Reflection.AssemblyProductAttribute("UTB.Casino.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UTB.Casino.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

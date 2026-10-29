@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
 namespace UTB.Casino.Domain.Entities;
 
 public class Transaction : Entity<int>
@@ -12,13 +13,10 @@ public class Transaction : Entity<int>
 
     [Required]
     [StringLength(50)]
-    public string Type { get; set; } 
+    public string Type { get; set; } = null!;
 
-    [ForeignKey(nameof(Account))]
     public int AccountId { get; set; }
-    public Account Account { get; set; }
-    
-    [ForeignKey(nameof(Customer))]
-    public int CustomerId { get; set; }
-    public Customer Customer { get; set; }
+
+    [ForeignKey(nameof(AccountId))]
+    public Account Account { get; set; } = null!;
 }

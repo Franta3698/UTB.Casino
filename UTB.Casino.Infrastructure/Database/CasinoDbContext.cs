@@ -10,7 +10,6 @@ public class CasinoDbContext : IdentityDbContext <User, Role, int>
 {
     public DbSet<Game> Games { get; set; }
     public DbSet<GameSession> GameSessions { get; set; }
-    public DbSet<Customer> Customers { get; set; }
     public DbSet<Account> Accounts { get; set; }
     public DbSet<Transaction> Transactions { get; set; }
     public DbSet<Bonus> Bonuses { get; set; }
@@ -23,11 +22,32 @@ public class CasinoDbContext : IdentityDbContext <User, Role, int>
     {
         base.OnModelCreating(modelBuilder);
         
-        CustomerInit customerInit = new CustomerInit();
+
         GameInit gameInit = new GameInit();
-        
-        modelBuilder.Entity<Customer>().HasData(customerInit.GetCustomers2());
+
         modelBuilder.Entity<Game>().HasData(gameInit.GetGames2());
+        UserInit userInit = new UserInit();
+        modelBuilder.Entity<User>().HasData(
+            userInit.GetAdmin(),
+            userInit.GetPlayer());
+        
+        AccountInit accountInit = new AccountInit();
+        modelBuilder.Entity<Account>().HasData(
+            accountInit.GetAdminAccount(),
+            accountInit.GetPlayerAccount()
+        );
+        BonusInit bonusInit = new BonusInit();
+
+        modelBuilder.Entity<Bonus>().HasData(
+            bonusInit.GetWelcomeBonus(),
+            bonusInit.GetPlayerBonus()
+        );
+        GameSessionInit gameSessionInit = new GameSessionInit();
+
+        modelBuilder.Entity<GameSession>().HasData(
+            gameSessionInit.GetAdminSession(),
+            gameSessionInit.GetPlayerSession()
+        );
     }
 }
 
